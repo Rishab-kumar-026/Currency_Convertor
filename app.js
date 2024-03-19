@@ -13,10 +13,10 @@ for (let select of drop_down) {
         let new_option = document.createElement("option");
         new_option.innerText = currCode;
         new_option.value = currCode;
-        if (select.id === "from" && currCode === "INR") {
+        if (select.id === "from" && currCode === "USD") {
             new_option.selected = "selected";
         }
-        else if (select.id === "to" && currCode === "USD") {
+        else if (select.id === "to" && currCode === "INR") {
             new_option.selected = "selected";
         }
         select.append(new_option);
